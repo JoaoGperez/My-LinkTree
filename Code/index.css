@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.blurry-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/Img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    /* Efeito de desfoque na imagem de fundo */
+}
+
+.content {
+    text-align: center;
+    /*background-color: rgba(245, 245, 245, 0.8); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80%;
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 150px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #eab63e;
+}
+h2 {
+    color: #BFA76F;
+    font-size: 30px;
+}
+a {
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: bold;
+    font-size: 22px;
+}
+.profile a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.email {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff; /* Barra abaixo do e-mail */
+}
+.email:hover{
+color: #BFA76F;
+}
+
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 50%;
+    margin: 8px auto;
+    padding: 20px 20px;
+    text-decoration: none;
+    border: 3px solid #fff; /* Borda azul escuro futurista */
+    border-radius: 10px;
+    color: #333333;
+
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #DAA520;
+    transition: background-color 0.3s ease;
+    position: relative; /* Adicionado para posicionar a imagem absolutamente */
+    
+
+
+}
+
+.social-links a:hover{
+    background-color: #333333;
+    color: #fff;
+}
+
+.social-links img {
+    position: absolute;
+    right: 20px; /* Ajuste conforme necessário */
+    margin-left: auto; /* Certifica-se de que a imagem fica à direita */
+}
+
+.portfolio-img {
+    height: 40px;
+}
+
+.linkedin-img {
+    height: 30px;
+}
+
+.github-img {
+    height: 35px;
+}
+
+.email-img {
+    height: 30px; /* Ajuste conforme necessário */
+}
+
