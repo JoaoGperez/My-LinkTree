@@ -7,7 +7,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -24,12 +23,10 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(10px);
-    /* Efeito de desfoque na imagem de fundo */
 }
 
 .content {
     text-align: center;
-    /*background-color: rgba(245, 245, 245, 0.8); /* Fundo branco com transparência */
     padding: 20px;
     border-radius: 10px;
     min-height: 80%;
@@ -41,7 +38,6 @@ body {
 
 .profile-pic {
     width: 150px;
-    /* Ajuste o tamanho conforme necessário */
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
@@ -57,7 +53,6 @@ h2 {
 a {
     color: #fff;
     text-decoration: none;
-    /* Remove sublinhado padrão */
     font-weight: bold;
     font-size: 22px;
 }
@@ -75,13 +70,11 @@ a {
     padding-top: 10px;
     padding-bottom: 20px;
     border-bottom: 2px solid #fff;
-    /* Barra abaixo do e-mail */
 }
 
 .email:hover {
     color: #BFA76F;
 }
-
 
 .social-links {
     margin-top: 20px;
@@ -94,27 +87,19 @@ a {
 .social-links a {
     display: flex;
     align-items: center;
-    /* Centraliza verticalmente */
     justify-content: center;
-    /* Centraliza horizontalmente */
     width: 50%;
     margin: 8px auto;
     padding: 20px 20px;
     text-decoration: none;
     border: 3px solid #fff;
-    /* Borda azul escuro futurista */
     border-radius: 10px;
     color: #333333;
-
     font-weight: bold;
     font-size: 22px;
     background-color: #DAA520;
     transition: background-color 0.3s ease;
     position: relative;
-    /* Adicionado para posicionar a imagem absolutamente */
-
-
-
 }
 
 .social-links a:hover {
@@ -125,9 +110,7 @@ a {
 .social-links img {
     position: absolute;
     right: 20px;
-    /* Ajuste conforme necessário */
     margin-left: auto;
-    /* Certifica-se de que a imagem fica à direita */
 }
 
 .linkedin-img {
@@ -138,7 +121,7 @@ a {
     height: 40px;
 }
 
-.whatsapp-img{
+.whatsapp-img {
     height: 30px;
 }
 
@@ -148,5 +131,62 @@ a {
 
 .email-img {
     height: 30px;
-    /* Ajuste conforme necessário */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .content {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+
+    .social-links a {
+        width: 70%;
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+
+    .social-links img {
+        margin-right: 10px;
+        height: 25px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .email {
+        font-size: 16px;
+    }
+
+    .social-links a {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    .social-links img {
+        height: 20px;
+        right: 5px;
+    }
 }
