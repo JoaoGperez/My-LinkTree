@@ -65,15 +65,42 @@ a {
     font-weight: bold;
 }
 
-.email {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #fff;
+.email-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
 }
 
-.email:hover {
-    color: #BFA76F;
+.email {
+    font-size: 1.5em;
+}
+
+.email-btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #151515;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+.email-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.email-btn:hover {
+    background-color: #DAA520;
+    transform: scale(1.0);
 }
 
 .social-links {
